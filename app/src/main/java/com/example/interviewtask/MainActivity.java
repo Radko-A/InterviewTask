@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 myWebView.reload();
-                //Toast.makeText(MainActivity.this, "RELOAD", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -88,13 +87,11 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
-            //super.onPageStarted(view, url, favicon);
             Toast.makeText(MainActivity.this, "OnPageStarted!", Toast.LENGTH_SHORT).show();
         }
 
         @Override
         public void onPageFinished(WebView view, String url) {
-            //super.onPageFinished(view, url);
             Toast.makeText(MainActivity.this, "OnPageFinished!", Toast.LENGTH_SHORT).show();
         }
     }
